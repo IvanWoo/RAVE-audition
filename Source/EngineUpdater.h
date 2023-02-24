@@ -8,8 +8,8 @@
 */
 
 #pragma once
-#include <JuceHeader.h>
 #include "PluginProcessor.h"
+#include <JuceHeader.h>
 
 class RAVEAuditionAudioProcessor; // forward declare
 
