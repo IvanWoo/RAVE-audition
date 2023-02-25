@@ -18,7 +18,7 @@ if (NOT torch_lib)
         "https://download.pytorch.org/libtorch/cpu/libtorch-cxx11-abi-shared-with-deps-1.10.1%2Bcpu.zip")
   elseif (UNIX AND APPLE)  # OSX
     set(torch_url
-        "https://download.pytorch.org/libtorch/cpu/libtorch-macos-1.10.1.zip")
+        "https://github.com/mlverse/libtorch-mac-m1/releases/download/LibTorch-for-R/libtorch-v1.13.1.zip")
   else()                   # Windows
     set(torch_url
         "https://download.pytorch.org/libtorch/cpu/libtorch-win-shared-with-deps-1.10.1%2Bcpu.zip")
