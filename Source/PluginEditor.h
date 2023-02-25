@@ -11,8 +11,6 @@
 #include <JuceHeader.h>
 #include "PluginProcessor.h"
 
-using namespace juce;
-
 static const juce::Colour APPLE_BLACK { Colour::fromRGBA(28, 28, 30, 255) };
 
 //==============================================================================

@@ -48,7 +48,7 @@ set(CMAKE_CXX_STANDARD 17)
 #set(CMAKE_LINKER_FLAGS "${CMAKE_LINKER_FLAGS} ")
 set(CMAKE_CXX_FLAGS "-Wall")
 set(CMAKE_CXX_FLAGS_DEBUG "-g")
-set(CMAKE_CXX_FLAGS_RELEASE "-O3 -march=native")
+set(CMAKE_CXX_FLAGS_RELEASE "-O3 -mcpu=apple-m1")
 if (MSVC)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /permissive- ")
 endif(MSVC)
@@ -157,7 +157,6 @@ get_target_property(active_formats rave-audition JUCE_FORMATS)
 set(libtorch_files
             "${TORCH_INSTALL_PREFIX}/lib/libtorch.dylib"
             "${TORCH_INSTALL_PREFIX}/lib/libtorch_cpu.dylib"
-            "${TORCH_INSTALL_PREFIX}/lib/libiomp5.dylib"
             "${TORCH_INSTALL_PREFIX}/lib/libc10.dylib")
 foreach(kind IN LISTS active_formats)
     foreach(resource_file IN LISTS libtorch_files)

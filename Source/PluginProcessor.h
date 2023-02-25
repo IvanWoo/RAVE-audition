@@ -8,9 +8,9 @@
 
 #pragma once
 
-#include <JuceHeader.h>
 #include <torch/torch.h>
 #include <torch/script.h>
+#include <JuceHeader.h>
 //#include <torch/csrc/jit/runtime/graph_executor.h>
 //#include <torch/csrc/jit/serialization/export.h>
 #include "EngineUpdater.h"
